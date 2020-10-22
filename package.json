@@ -1,0 +1,57 @@
+{
+  "name": "JohnWebberWoodwork",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production nodemon server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "concurrently \"NODE_ENV=development\" \"webpack-dev-server --open --hot\" \"nodemon server/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.0",
+    "nodemailer": "^6.4.14",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.3",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizlotto/webber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elizlotto/webber/issues"
+  },
+  "homepage": "https://github.com/elizlotto/webber#readme",
+  "description": ""
+}
