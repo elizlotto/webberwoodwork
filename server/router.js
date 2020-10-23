@@ -5,7 +5,7 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    
+    //details here 
       }
 });
 
@@ -18,21 +18,12 @@ transporter.verify((error, success) => {
   }
 });
 
-transporter.on('token', token => {
-  console.log('A new access token was generated');
-  console.log('User: %s', token.user);
-  console.log('Access Token: %s', token.accessToken);
-  console.log('Expires: %s', new Date(token.expires));
-});
-
 module.exports = {
   sendEmail(req, res, next) {
-    console.log('in sendEmail');
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
     const content = `name: ${name} \n email: ${email} \n message: ${message} `;
-    console.log(content);
 
     const mail = {
       from: name,
