@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-//const email = require('./router');
-const nodemailer = require('nodemailer');
 const cors = require('cors');
 const router = require('./router');
 const path = require('path');
@@ -26,6 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 //route for nodemailer
 app.post('/send', router.sendEmail, (req, res, next) => {
   return res.status(200);
+  //could send back a message on res.locals here
 });
 
 // catch-all endpoint handler
