@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './NavigationBar.css';
 
 const NavigationBar = () => {
   return (
-    <nav>
+    <nav id="navbar">
       <div class="columns">
         <div class="column"></div>
         <div class="column">
