@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -40,7 +41,7 @@ class ContactForm extends React.Component {
   
   render() {
     return (
-      <div className="App">
+      <div className="contact">
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
             <label htmlFor="name">Name</label>

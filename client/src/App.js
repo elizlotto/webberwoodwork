@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
+
 //import components for router
 import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
