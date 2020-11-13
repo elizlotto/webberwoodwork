@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
+
 //import components for router
 import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
@@ -17,22 +18,22 @@ const App = () => {
   We'll also need to render images on the home page, anyway.
   */
 
-  
+
   return (
     <HashRouter>
       <main>
-      <NavigationBar/>
+        <NavigationBar />
         <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/testimonials" component={Testimonials} />
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/testimonials" component={Testimonials} />
           <Route path="/contact" component={Contact} />
-          </Switch>
+        </Switch>
         <FooterBar />
       </main>
-      
-      </HashRouter>
+
+    </HashRouter>
   );
 };
 

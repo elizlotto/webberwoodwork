@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './style.css';
 const Home = () => {
   return (
-    <div>
+    <div className="body-div">
       <h1>John Webber Woodwork</h1>
       <section>Welcome to John Webber Woodwork! 
       John Webber has been providing quality woodwork for Victorian Flatbush for decades. 
