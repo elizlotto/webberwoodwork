@@ -5,11 +5,20 @@ import { Link } from 'react-router-dom';
 const NavigationBar = () => {
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/portfolio">Gallery</Link>
-      <Link to="/testimonials">Customer Testimonials</Link>
-      <Link to="/contact">Contact Form</Link>
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column">
+          <button><Link to="/">Home</Link></button>
+      <button><Link to="/about">About</Link></button>
+      <button><Link to="/portfolio">Gallery</Link></button>
+      <button><Link to="/testimonials">Customer Testimonials</Link></button>
+          <button><Link to="/contact">Contact Form</Link></button>
+      </div>
+        <div class="column"></div>
+
+  
+      </div>
+     
     </nav>
   );
 };
