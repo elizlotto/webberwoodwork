@@ -9,7 +9,7 @@ const NavigationBar = () => {
       <Link to="/about">About</Link>
       <Link to="/portfolio">Gallery</Link>
       <Link to="/testimonials">Customer Testimonials</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/contact">Contact Form</Link>
     </nav>
   );
 };
