@@ -27,7 +27,7 @@ module.exports = {
 
     const mail = {
       from: name,
-      to: 'jwebberwoodwork@gmail.com', // Change to email address that you want to receive messages on
+      to: 'jwebberwoodwork@gmail.com', 
       subject: 'New Message from Contact Form',
       text: content,
     };
