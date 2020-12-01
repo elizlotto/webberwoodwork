@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
-import ReactDOM from 'react-dom';
+import './components/style.css'
 
 
 //import components for router

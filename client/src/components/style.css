@@ -1,5 +1,13 @@
+/* css for the main react divs  */
 .body-div{
-  padding-top: 5%;
   width:95%;
   margin: auto;
+  
 }
+
+/* css for the main html tag in app.js */
+main {
+  color: #FFD393;
+  background-color: #2D201C;
+  height: 100%;
+} 
