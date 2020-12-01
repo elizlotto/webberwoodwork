@@ -11,7 +11,7 @@ const NavigationBar = () => {
           <img
             class="logo"
             src={JwwLogo}
-            width="120"
+            width="130"
             alt="John Webber Woodwork Logo, click for Home"
           ></img>
         </Link>
@@ -27,7 +27,7 @@ const NavigationBar = () => {
           <Link to="/testimonials">Customer Testimonials</Link>
         </button>
         <button>
-          <Link to="/contact">Contact Form</Link>
+          <Link to="/contact">Contact Me</Link>
         </button>
       </div>
     </nav>
