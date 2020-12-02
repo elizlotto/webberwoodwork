@@ -15,21 +15,38 @@ const NavigationBar = () => {
             alt="John Webber Woodwork Logo, click for Home"
           ></img>
         </Link>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="navbar-start">
-        <button>
-          <Link to="/about">About</Link>
-        </button>
-        <button>
-          <Link to="/portfolio">Gallery</Link>
-        </button>
-        <button>
-          <Link to="/testimonials">Customer Testimonials</Link>
-        </button>
-        <button>
-          <Link to="/contact">Contact Me</Link>
-        </button>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <button>
+              <Link to="/about">About</Link>
+            </button>
+          </div>
+          <div class="navbar-item">
+            <button>
+              <Link to="/portfolio">Gallery</Link>
+            </button>
+          </div>
+          <div class="navbar-item">
+            <button>
+              <Link to="/testimonials">Reviews</Link>
+            </button>
+          </div>
+          <div class="navbar-item">
+            <button>
+              <Link to="/contact">Contact Me</Link>
+            </button>
+          </div>
+        </div>
       </div>
+
+      <div class="navbar-end"></div>
     </nav>
   );
 };
