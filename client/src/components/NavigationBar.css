@@ -1,12 +1,6 @@
 #navbar {
-  
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
     width: 100%;
-    height: 8%;
+    position: fixed;
+    background-color: #2D201C;
 }
 
-.logo {
-    height: 65px;
-}
