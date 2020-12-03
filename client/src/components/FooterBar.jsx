@@ -3,9 +3,8 @@ import './FooterBar.css';
 
 const FooterBar = () => {
   return (<footer className="footer-bar">
-  John Webber Wood Work, Brooklyn, NY | 
-  Phone: (347) - 400-0311 |
-  Email: john(at)johnwebberwoodwork(dot)com
+  JOHN WEBBER WOODWORK, Brooklyn, NY | 
+  Phone: (347) - 400-0311 
   </footer>);
 };
 

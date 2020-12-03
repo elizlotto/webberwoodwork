@@ -1,9 +1,41 @@
 #navbar {
-    width: 100%;
-    position: fixed;
-    background-color: #2D201C;
+  width: 100%;
+  position: fixed;
+  background-color: #2d201c;
+  height: 10%;
+  color: #42ac2b;
 }
+/* extends the color of the navbar for when the mobile version is displayed and burger clicked to expand. */
 #navbarBasic {
-    background-color: #2D201C;
+  background-color: #2d201c;
+}
+img {
+  margin-left: 10px;
+  padding-top: 10px;
 }
 
+.navbar-burger {
+  color: white;
+}
+
+.btnclr {
+    color:#2d201c;
+}
+
+button {
+  font-family: "JetBrains Mono", monospace;
+  border-radius: 2px;
+ 
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+  height: 50px;
+  width: 80px;
+  border: solid #2d201c 4px
+}
+
+button:hover {
+  border: solid white;
+  border-radius: 2px;
+  text-align: center;
+}

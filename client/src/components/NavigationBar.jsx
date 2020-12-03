@@ -5,6 +5,9 @@ import JwwLogo from '../assets/logo.png';
 import { useState } from 'react';
 
 const NavigationBar = () => {
+  /*this function will toggle the menu in mobile mode without needing to set a state
+   This function must be included in the onClick for each menu item to the menu closes after the click.JwwLogo
+  */
   function toggleBurgerMenu() {
     document.querySelector('.navbar-menu').classList.toggle('is-active');
   }
@@ -37,35 +40,35 @@ const NavigationBar = () => {
         <div class="navbar-start">
           <div class="navbar-item">
             <button>
-              <Link to="/" onClick={toggleBurgerMenu}>
+              <Link to="/" class="btnclr" onClick={toggleBurgerMenu}>
                 Home
               </Link>
             </button>
           </div>
           <div class="navbar-item">
             <button>
-              <Link to="/about" onClick={toggleBurgerMenu}>
+              <Link to="/about" class="btnclr" onClick={toggleBurgerMenu}>
                 About
               </Link>
             </button>
           </div>
           <div class="navbar-item">
             <button>
-              <Link to="/portfolio" onClick={toggleBurgerMenu}>
+              <Link to="/portfolio" class="btnclr" onClick={toggleBurgerMenu}>
                 Gallery
               </Link>
             </button>
           </div>
           <div class="navbar-item">
             <button>
-              <Link to="/testimonials" onClick={toggleBurgerMenu}>
+              <Link to="/testimonials" class="btnclr" onClick={toggleBurgerMenu}>
                 Reviews
               </Link>
             </button>
           </div>
           <div class="navbar-item">
             <button>
-              <Link to="/contact" onClick={toggleBurgerMenu}>
+              <Link to="/contact" class="btnclr" onClick={toggleBurgerMenu}>
                 Contact Me
               </Link>
             </button>

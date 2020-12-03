@@ -3,7 +3,7 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color:#FFD393;
-  padding-top: 100px;
+  padding-top: 120px;
   width:100%;
   margin: auto;
   
@@ -11,6 +11,7 @@
 
 /* css for the main html tag in app.js */
 main {
+  font-family: 'JetBrains Mono', monospace;
   background-color: #FFD393;
   color: #2D201C;
   height: 100%;
