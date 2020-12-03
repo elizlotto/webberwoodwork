@@ -6,7 +6,7 @@
   color: #42ac2b;
 }
 /* extends the color of the navbar for when the mobile version is displayed and burger clicked to expand. */
-.navbarBasic {
+#navbarBasic {
   background-color: #2d201c;
 }
 img {
@@ -35,8 +35,7 @@ button {
 }
 
 button:hover {
-  background: #white;
-  border: solid white 8px;
+  border: solid white;
   border-radius: 2px;
-  text-decoration: none;
+  text-align: center;
 }
