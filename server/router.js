@@ -22,13 +22,14 @@ module.exports = {
   sendEmail(req, res, next) {
     const name = req.body.name;
     const email = req.body.email;
+    const subject = req.body.subject;
     const message = req.body.message;
-    const content = `name: ${name} \n email: ${email} \n message: ${message} `;
+    const content = `name: ${name} \n email: ${email} \n ${subject} \n message: ${message} `;
 
     const mail = {
       from: name,
       to: 'jwebberwoodwork@gmail.com', 
-      subject: 'New Message from Contact Form',
+      subject: subject,
       text: content,
     };
 

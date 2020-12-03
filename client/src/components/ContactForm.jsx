@@ -7,6 +7,7 @@ class ContactForm extends React.Component {
     this.state = {
       name: '',
       email: '',
+      subject: '',
       message: '',
     };
   }
@@ -35,6 +36,7 @@ class ContactForm extends React.Component {
     this.setState({
       name: '',
       email: '',
+      subject: '',
       message: '',
     });
   }
@@ -67,6 +69,28 @@ class ContactForm extends React.Component {
                 value={this.state.email}
                 onChange={this.onEmailChange.bind(this)}
               />
+            </div>
+            <div className="field">
+              <label className="label" htmlFor="InputSubject">Subject:</label>
+            <div className="control">
+            {/* <input
+                type="text"
+                className="form-control"
+                value={this.state.subject}
+                onChange={this.onSubjectChange.bind(this)}
+                /> */}
+                <div class="select"
+                className="form-control"
+                value={this.state.subject}
+                onChange={this.onSubjectChange.bind(this)}>
+      <select>
+        <option>Select from dropdown</option>
+                    <option>General Questions</option>
+                    <option>Pricing Inquiry</option>
+                    <option>Share a Review</option>
+      </select>
+    </div>
+</div>
             </div>
           </div>
           <div className="field">
@@ -101,7 +125,9 @@ class ContactForm extends React.Component {
   onEmailChange(e) {
     this.setState({ email: e.target.value });
   }
-
+  onSubjectChange(e) {
+    this.setState({ subject: e.target.value });
+  }
   onMessageChange(e) {
     this.setState({ message: e.target.value });
   }
