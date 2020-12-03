@@ -71,26 +71,25 @@ class ContactForm extends React.Component {
               />
             </div>
             <div className="field">
-              <label className="label" htmlFor="InputSubject">Subject:</label>
-            <div className="control">
-            {/* <input
-                type="text"
-                className="form-control"
-                value={this.state.subject}
-                onChange={this.onSubjectChange.bind(this)}
-                /> */}
-                <div class="select"
-                className="form-control"
-                value={this.state.subject}
-                onChange={this.onSubjectChange.bind(this)}>
-      <select>
-        <option>Select from dropdown</option>
+              <label className="label" htmlFor="InputSubject">
+                Subject:
+              </label>
+              <div className="control">
+        {/* add an error prompt for state if Select is the value from dropdown  */}
+                <div
+                  class="select"
+                  className="form-control"
+                  value={this.state.subject}
+                  onChange={this.onSubjectChange.bind(this)}
+                >
+                  <select>
+                    <option>Select from dropdown</option>
                     <option>General Questions</option>
                     <option>Pricing Inquiry</option>
                     <option>Share a Review</option>
-      </select>
-    </div>
-</div>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
           <div className="field">
