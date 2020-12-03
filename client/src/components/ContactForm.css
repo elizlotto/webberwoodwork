@@ -1,3 +1,16 @@
 .contact {
 height: 100%;
 }
+
+.btn {
+  border: solid black 2px ;
+  background-color: #2d201c ;
+  color: white;
+}
+
+.btn:hover {
+background: white;
+color: #2d201c;
+border: solid black 2px;
+
+}
