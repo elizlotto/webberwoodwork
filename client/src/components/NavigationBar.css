@@ -25,6 +25,11 @@ img {
   color: white;
 }
 
+.navbar-burger:hover {
+color: #FFD393;
+}
+
+/* handles the text color of the buttons in the nav */
 .btnclr {
     color:#2d201c;
 }
