@@ -2,7 +2,7 @@
   width: 100%;
   position: fixed;
   background-color: #2d201c;
-  height: 13%;
+  height: 135;
   color: #42ac2b;
 }
 /* extends the color of the navbar for when the mobile version is displayed and burger clicked to expand. */
@@ -12,13 +12,12 @@
   background-color: #2d201c;
 }
 .navbar-menu {
-padding-top: 16px;
 padding-left: 5%;
 
 }
 img {
   margin-left: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .navbar-burger {

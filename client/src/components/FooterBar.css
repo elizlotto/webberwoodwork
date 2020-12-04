@@ -3,7 +3,7 @@
   width:100%;
   text-align: center;
   position: fixed;
-  height: 10%;
+  height: 13%;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -21,4 +21,8 @@ h2{
 }
 h4 {
   font-size: 1em;
+}
+
+footer {
+  padding-top: 1%;
 }
