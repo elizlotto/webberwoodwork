@@ -2,40 +2,54 @@
   width: 100%;
   position: fixed;
   background-color: #2d201c;
-  height: 10%;
+  height: 135;
   color: #42ac2b;
 }
 /* extends the color of the navbar for when the mobile version is displayed and burger clicked to expand. */
 #navbarBasic {
+  margin-left: 30px;
+  margin-bottom: 10px;
   background-color: #2d201c;
 }
+.navbar-menu {
+padding-left: 5%;
+
+}
 img {
-  margin-left: 10px;
-  padding-top: 10px;
+  margin-left: 20px;
+  padding-top: 25px;
 }
 
 .navbar-burger {
   color: white;
 }
 
+.navbar-burger:hover {
+color: #FFD393;
+}
+
+/* handles the text color of the buttons in the nav */
 .btnclr {
     color:#2d201c;
 }
 
 button {
   font-family: "JetBrains Mono", monospace;
-  border-radius: 2px;
+  font-weight: bold;
+  font-size: .8em;
+  border-radius: 10px;
  
   background-color: white;
   text-decoration: none;
   cursor: pointer;
   height: 50px;
   width: 80px;
-  border: solid #2d201c 4px
+  border: solid #2d201c 4px;
 }
 
 button:hover {
-  border: solid white;
-  border-radius: 2px;
+  border: solid #42AC2B;
+  background-color: #42AC2B;
+  border-radius: 10px;
   text-align: center;
 }

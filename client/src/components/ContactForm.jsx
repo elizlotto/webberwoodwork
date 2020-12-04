@@ -49,36 +49,49 @@ class ContactForm extends React.Component {
             <label className="label" htmlFor="name">
               Name
             </label>
-            <div className="control">
+            <div class="control has-icons-left has-icons-right">
               <input
                 type="text"
-                className="form-control"
+                placeholder="e.g Jane Smith"
+                class="input is-success"
                 value={this.state.name}
                 onChange={this.onNameChange.bind(this)}
               />
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
             </div>
           </div>
           <div className="field">
-            <label className="label" htmlFor="InputEmail">
+            <label className="label" htmlFor="inputEmail">
               Email address
             </label>
-            <div className="control">
+            <div class="control has-icons-left has-icons-right">
               <input
                 type="email"
-                className="form-control"
+                placeholder="jsmith@gmail.com"
+                class="input is-danger"
                 value={this.state.email}
                 onChange={this.onEmailChange.bind(this)}
               />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
             </div>
             <div className="field">
               <label className="label" htmlFor="InputSubject">
                 Subject:
               </label>
               <div className="control">
-        {/* add an error prompt for state if Select is the value from dropdown  */}
+                {/* add an error prompt for state if Select is the value from dropdown  */}
                 <div
                   class="select"
-                  className="form-control"
                   value={this.state.subject}
                   onChange={this.onSubjectChange.bind(this)}
                 >
@@ -96,9 +109,9 @@ class ContactForm extends React.Component {
             <label className="label" htmlFor="message">
               Message
             </label>
-            <div className="control">
+            <div class="control">
               <textarea
-                className="form-control"
+                class="textarea"
                 rows="5"
                 value={this.state.message}
                 onChange={this.onMessageChange.bind(this)}

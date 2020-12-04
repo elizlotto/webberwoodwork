@@ -1,9 +1,11 @@
 /* css for the main react divs  */
 .body-div{
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 145px;
+  padding-bottom: 120px;
   background-color:#FFD393;
-  padding-top: 120px;
+  
   width:100%;
   margin: auto;
   

@@ -19,7 +19,7 @@ const NavigationBar = () => {
           <img
             class="logo"
             src={JwwLogo}
-            width="130"
+            width="160"
             alt="John Webber Woodwork Logo, click for Home"
           ></img>
         </Link>

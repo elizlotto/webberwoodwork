@@ -7,7 +7,7 @@ const Testimonials = () => {
   
   return (
     <div className="body-div">
-      Testimonials will show here.
+      Coming soon. 
     </div>
   )
 }
