@@ -9,6 +9,7 @@ class ContactForm extends React.Component {
       email: '',
       subject: '',
       message: '',
+      status: null,
     };
   }
 
@@ -27,9 +28,10 @@ class ContactForm extends React.Component {
       .then((response) => response.json())
       .then((response) => {
         if (response.status === 'success') {
-          alert('Your message has been sent.'); //change the state for a new view
+          this.setState({ status: 'Your message was sent successfully!' });
         } else if (response.status === 'fail') {
-          alert('Message failed to send.');
+          this.setState({ status: 'There was an error - the message was not sent!' });
+          
         }
       });
 
@@ -38,16 +40,21 @@ class ContactForm extends React.Component {
       email: '',
       subject: '',
       message: '',
+      status: null,
     });
   }
 
   render() {
+
     return (
       <div className="contact">
+        <div className="status"> 
+          {this.state.status && <h2 style={{ color: 'green' }}>{this.state.status} </h2>}
+        </div>
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="field">
             <label className="label" htmlFor="name">
-              Name
+              Name:
             </label>
             <div class="control has-icons-left has-icons-right">
               <input
@@ -67,7 +74,7 @@ class ContactForm extends React.Component {
           </div>
           <div className="field">
             <label className="label" htmlFor="inputEmail">
-              Email address
+              Email address:
             </label>
             <div class="control has-icons-left has-icons-right">
               <input
@@ -85,11 +92,10 @@ class ContactForm extends React.Component {
               </span>
             </div>
             <div className="field">
-              <label className="label" htmlFor="InputSubject">
+              <label id="subject" className="label" htmlFor="inputSubject">
                 Subject:
               </label>
               <div className="control">
-                {/* add an error prompt for state if Select is the value from dropdown  */}
                 <div
                   class="select"
                   value={this.state.subject}

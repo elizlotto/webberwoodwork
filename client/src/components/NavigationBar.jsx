@@ -13,11 +13,11 @@ const NavigationBar = () => {
   }
 
   return (
-    <nav id="navbar" role="navigation" class="navbar" aria-label="main navigation">
-      <div class="navbar-brand">
+    <nav id="navbar" role="navigation" className="navbar" aria-label="main navigation">
+      <div className="navbar-brand">
         <Link to="/">
           <img
-            class="logo"
+            className="logo"
             src={JwwLogo}
             width="160"
             alt="John Webber Woodwork Logo, click for Home"
@@ -37,38 +37,38 @@ const NavigationBar = () => {
         </a>
       </div>
       <div id="navbarBasic" className="navbar-menu">
-        <div class="navbar-start">
-          <div class="navbar-item">
+        <div className="navbar-start">
+          <div className="navbar-item">
             <button>
-              <Link to="/" class="btnclr" onClick={toggleBurgerMenu}>
+              <Link to="/" className="btnclr" onClick={toggleBurgerMenu}>
                 Home
               </Link>
             </button>
           </div>
-          <div class="navbar-item">
+          <div className="navbar-item">
             <button>
-              <Link to="/about" class="btnclr" onClick={toggleBurgerMenu}>
+              <Link to="/about" className="btnclr" onClick={toggleBurgerMenu}>
                 About
               </Link>
             </button>
           </div>
-          <div class="navbar-item">
+          <div className="navbar-item">
             <button>
-              <Link to="/portfolio" class="btnclr" onClick={toggleBurgerMenu}>
+              <Link to="/portfolio" className="btnclr" onClick={toggleBurgerMenu}>
                 Gallery
               </Link>
             </button>
           </div>
-          <div class="navbar-item">
+          <div className="navbar-item">
             <button>
-              <Link to="/testimonials" class="btnclr" onClick={toggleBurgerMenu}>
+              <Link to="/testimonials" className="btnclr" onClick={toggleBurgerMenu}>
                 Reviews
               </Link>
             </button>
           </div>
-          <div class="navbar-item">
+          <div className="navbar-item">
             <button>
-              <Link to="/contact" class="btnclr" onClick={toggleBurgerMenu}>
+              <Link to="/contact" className="btnclr" onClick={toggleBurgerMenu}>
                 Contact Me
               </Link>
             </button>
@@ -76,7 +76,7 @@ const NavigationBar = () => {
         </div>
       </div>
 
-      <div class="navbar-end"></div>
+      <div className="navbar-end"></div>
     </nav>
   );
 };
