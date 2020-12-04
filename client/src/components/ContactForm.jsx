@@ -52,6 +52,7 @@ class ContactForm extends React.Component {
             <div class="control has-icons-left has-icons-right">
               <input
                 type="text"
+                placeholder="e.g Jane Smith"
                 class="input is-success"
                 value={this.state.name}
                 onChange={this.onNameChange.bind(this)}
@@ -71,6 +72,7 @@ class ContactForm extends React.Component {
             <div class="control has-icons-left has-icons-right">
               <input
                 type="email"
+                placeholder="jsmith@gmail.com"
                 class="input is-danger"
                 value={this.state.email}
                 onChange={this.onEmailChange.bind(this)}
