@@ -3,8 +3,9 @@ import './FooterBar.css';
 
 const FooterBar = () => {
   return (<footer className="footer-bar">
-  JOHN WEBBER WOODWORK, Brooklyn, NY | 
-  Phone: (347) - 400-0311 
+    <h2>JOHN WEBBER WOODWORK</h2>
+   <h4>Brooklyn, NY </h4>
+  <h4>Phone: (347) - 400-0311 </h4>
   </footer>);
 };
 
