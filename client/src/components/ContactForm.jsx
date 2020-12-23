@@ -126,6 +126,7 @@ class ContactForm extends React.Component {
           </div>
           <div class="field">
             <div className="control">
+            <div class="g-recaptcha" data-sitekey="6LdcqvkZAAAAAIGEvGuNH0ZeTTVz_zGiqPBHX7qW"></div>
               <button type="submit" className="btn">
                 Submit
               </button>
