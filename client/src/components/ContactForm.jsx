@@ -14,8 +14,6 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log(this.state);
-    console.log('in handle Submit');
     e.preventDefault();
     fetch('/send', {
       method: 'POST',
