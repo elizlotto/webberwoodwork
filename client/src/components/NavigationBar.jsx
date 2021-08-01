@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 import JwwLogo from '../assets/logo.png';
-import { useState } from 'react';
 
 const NavigationBar = () => {
   /*this function will toggle the menu in mobile mode without needing to set a state
@@ -39,39 +38,29 @@ const NavigationBar = () => {
       <div id="navbarBasic" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
-            <button>
-              <Link to="/" className="btnclr" onClick={toggleBurgerMenu}>
-                Home
-              </Link>
-            </button>
+            <Link to="/" className="btnclr" onClick={toggleBurgerMenu}>
+              <button>Home</button>
+            </Link>
           </div>
           <div className="navbar-item">
-            <button>
-              <Link to="/about" className="btnclr" onClick={toggleBurgerMenu}>
-                About
-              </Link>
-            </button>
+            <Link to="/about" className="btnclr" onClick={toggleBurgerMenu}>
+              <button>About</button>
+            </Link>
           </div>
           <div className="navbar-item">
-            <button>
-              <Link to="/portfolio" className="btnclr" onClick={toggleBurgerMenu}>
-                Gallery
-              </Link>
-            </button>
+            <Link to="/portfolio" className="btnclr" onClick={toggleBurgerMenu}>
+              <button>Gallery</button>
+            </Link>
           </div>
           <div className="navbar-item">
-            <button>
-              <Link to="/testimonials" className="btnclr" onClick={toggleBurgerMenu}>
-                Reviews
-              </Link>
-            </button>
+            <Link to="/testimonials" className="btnclr" onClick={toggleBurgerMenu}>
+              <button>Reviews</button>
+            </Link>
           </div>
           <div className="navbar-item">
-            <button>
-              <Link to="/contact" className="btnclr" onClick={toggleBurgerMenu}>
-                Contact Me
-              </Link>
-            </button>
+            <Link to="/contact" className="btnclr" onClick={toggleBurgerMenu}>
+              <button>Contact</button>
+            </Link>
           </div>
         </div>
       </div>
