@@ -2,18 +2,14 @@ import React from 'react';
 const { useState } = React;
 import './ImageDisplayer.css';
 
-const ImageDisplayer = () => {
+const ImageDisplayer = (props) => {
   const [lightBoxDisplay, setLightBoxDisplay] = useState(false);
   const [imageToShow, setImageToShow] = useState('');
 
-  function importAll(r) {
-    return r.keys().map(r);
-  }
+  const images = props.images;
 
-  const images = importAll(require.context('../assets/hero-images', true, /\.(png|jpe?g|svg)$/));
-
-  const imageCards = images.map((image) => (
-    <img className="image-card" onClick={() => showImage(image.default)} src={image.default} />
+  const imageCards = images.map((image, idx) => (
+    <img key={idx} className="image-card" onClick={() => showImage(image)} src={image} />
   ));
 
   const showImage = (image) => {
@@ -26,7 +22,7 @@ const ImageDisplayer = () => {
   };
 
   const showNext = (e) => {
-    e.stopPopagation();
+    e.stopPropagation();
     let currentIndex = images.indexOf(imageToShow);
     if (currentIndex >= images.length - 1) {
       setLightBoxDisplay(false);
