@@ -15,3 +15,23 @@ main {
   color: #2d201c;
   height: 100%;
 }
+
+/* css for hero banners for each component with one */
+
+.hero-image-home {
+  height: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/porch_cropped.jpg");
+}
+
+.hero-image-about {
+  height: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/zoomed_hand.jpg");
+}
+
+.hero-image-reviews {
+  height: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/reviews_hero.jpg");
+}
