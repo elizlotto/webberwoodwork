@@ -4,16 +4,13 @@ import './NavigationBar.css';
 import JwwLogo from '../assets/logo.png';
 
 const NavigationBar = () => {
-  /*this function will toggle the menu in mobile mode without needing to set a state
-   This function must be included in the onClick for each menu item to the menu closes after the click.JwwLogo
-  */
   function toggleBurgerMenu() {
     document.querySelector('.navbar-menu').classList.toggle('is-active');
   }
 
   return (
-    <section class="hero is-primary is-medium">
-      <div class="hero-head">
+    <section className="hero is-primary is-medium">
+      <div className="hero-head">
         <nav id="navbar" role="navigation" className="navbar" aria-label="main navigation">
           <div className="navbar-brand">
             <Link to="/">
@@ -37,7 +34,7 @@ const NavigationBar = () => {
               <span aria-hidden="true"></span>
             </a>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
+          <div id="navbarMenuHeroA" className="navbar-menu">
             <div className="navbar-end">
               <div className="navbar-item">
                 <Link to="/" className="btnclr" onClick={toggleBurgerMenu}>
