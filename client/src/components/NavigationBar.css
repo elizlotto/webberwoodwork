@@ -1,9 +1,11 @@
 #navbar {
   width: 100%;
-  /* position: fixed; */
+  /* position: static; */
   background-color: #2d201c;
-  height: 135;
   color: #42ac2b;
+}
+.navbar-menu {
+  background-color: #2d201c;
 }
 /* extends the color of the navbar for when the mobile version is displayed and burger clicked to expand. */
 #navbarBasic {
@@ -13,7 +15,8 @@
 
 img {
   margin-left: 20px;
-  padding-top: 25px;
+  padding-bottom: 1%;
+  padding-top: 1%;
 }
 
 .navbar-burger {

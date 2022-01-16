@@ -1,17 +1,17 @@
 /* css for the main react divs  */
-.body-div{
+.body-div {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 145px;
+  /* padding-top: 145px; */
   padding-bottom: 120px;
-  width:100%;
+  width: 100%;
   margin: auto;
-  
+  background-color: #fff1de;
 }
 
 /* css for the main html tag in app.js */
 main {
-  font-family: 'JetBrains Mono', monospace;
-  color: #2D201C;
+  font-family: "JetBrains Mono", monospace;
+  color: #2d201c;
   height: 100%;
-} 
+}

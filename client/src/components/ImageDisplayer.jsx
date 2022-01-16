@@ -51,13 +51,13 @@ const ImageDisplayer = (props) => {
         <div id="lightbox" onClick={hideLightBox}>
           <div className="modal-background"></div>
           <div className="modal-content">
+            <button onClick={showPrev}>⭠</button>
+            <img id="lightbox-img" src={imageToShow}></img>
+            <button className="lightbox-btn" onClick={showNext}>
+              ⭢
+            </button>
             <div>
-              <img id="lightbox-img" src={imageToShow}></img>
-              <div>
-                <div id="caption-box">{captions[images.indexOf(imageToShow)]}</div>
-              </div>
-              <button onClick={showPrev}>⭠</button>
-              <button onClick={showNext}>⭢</button>
+              <div id="caption-box">{captions[images.indexOf(imageToShow)]}</div>
             </div>
           </div>
         </div>

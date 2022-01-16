@@ -35,7 +35,7 @@ const NavigationBar = () => {
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbarBasic" className="navbar-menu">
+      <div id="navbarBasic" class="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
             <Link to="/" className="btnclr" onClick={toggleBurgerMenu}>
@@ -57,13 +57,13 @@ const NavigationBar = () => {
               <button>Reviews</button>
             </Link>
           </div>
-          {/* <div className="navbar-item">
+        </div>
+      </div>
+      {/* <div className="navbar-item">
             <Link to="/contact" className="btnclr" onClick={toggleBurgerMenu}>
               <button>Contact</button>
             </Link>
           </div> */}
-        </div>
-      </div>
 
       <div className="navbar-end"></div>
     </nav>
