@@ -1,21 +1,22 @@
-.footer-bar{
+.footer-bar {
+  z-index: 0;
   margin: auto;
-  width:100%;
+  width: 100%;
   text-align: center;
   position: fixed;
-  height: 13%;
+  height: 15%;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  color:  white;
-  background-color: #42AC2B;
+  color: white;
+  background-color: #42ac2b;
 }
 
 h1 {
   font-size: 1.875em;
 }
 
-h2{
+h2 {
   font-size: 1.25em;
   font-weight: bold;
 }
