@@ -13,10 +13,23 @@ import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
 
 const App = () => {
-  /*Consider a useEffect here to fetch the images from the server and 
-  then pass as props to the Portfolio so the data is loaded. We can assume visitors will want to see his work.
-  We'll also need to render images on the home page, anyway.
-  */
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const imagesObj = importAll(require.context('./assets/hero-images', true, /\.(png|jpe?g|svg)$/));
+
+  //the above returns an array of objects with images on .default
+
+  const createImagesArray = (img) => {
+    const valuesToArray = [];
+    img.forEach((obj) => {
+      valuesToArray.push(obj.default);
+    });
+    return valuesToArray;
+  };
+  const imagesArray = createImagesArray(imagesObj);
+
 
 
   return (
@@ -26,13 +39,12 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/portfolio" render={(props) => <Portfolio {...props} imagesArray={imagesArray} />} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/contact" component={Contact} />
         </Switch>
         <FooterBar />
       </main>
-
     </HashRouter>
   );
 };

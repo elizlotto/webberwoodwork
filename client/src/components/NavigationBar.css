@@ -1,6 +1,6 @@
 #navbar {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   background-color: #2d201c;
   height: 135;
   color: #42ac2b;
@@ -9,12 +9,8 @@
 #navbarBasic {
   margin-left: 30px;
   margin-bottom: 10px;
-  background-color: #2d201c;
 }
-.navbar-menu {
-padding-left: 5%;
 
-}
 img {
   margin-left: 20px;
   padding-top: 25px;
@@ -25,20 +21,20 @@ img {
 }
 
 .navbar-burger:hover {
-color: #FFD393;
+  color: #ffd393;
 }
 
 /* handles the text color of the buttons in the nav */
 .btnclr {
-    color:#2d201c;
+  color: #2d201c;
 }
 
 button {
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
-  font-size: .8em;
+  font-size: 0.8em;
   border-radius: 10px;
- 
+
   background-color: white;
   text-decoration: none;
   cursor: pointer;
@@ -48,8 +44,8 @@ button {
 }
 
 button:hover {
-  border: solid #42AC2B;
-  background-color: #42AC2B;
+  border: solid #42ac2b;
+  background-color: #42ac2b;
   border-radius: 10px;
   text-align: center;
 }

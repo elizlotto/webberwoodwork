@@ -57,11 +57,11 @@ const NavigationBar = () => {
               <button>Reviews</button>
             </Link>
           </div>
-          <div className="navbar-item">
+          {/* <div className="navbar-item">
             <Link to="/contact" className="btnclr" onClick={toggleBurgerMenu}>
               <button>Contact</button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
