@@ -45,19 +45,22 @@ const ImageDisplayer = (props) => {
 
   return (
     <>
-      <div>{imageCards}</div>
+      <div className="gallery">{imageCards}</div>
 
       {lightBoxDisplay ? (
         <div id="lightbox" onClick={hideLightBox}>
-          <div className="modal-background"></div>
-          <div className="modal-content">
-            <div>
+          <div className="modal-background">
+            <div className="modal-content">
               <img id="lightbox-img" src={imageToShow}></img>
               <div>
                 <div id="caption-box">{captions[images.indexOf(imageToShow)]}</div>
               </div>
-              <button onClick={showPrev}>⭠</button>
-              <button onClick={showNext}>⭢</button>
+              <button className="lightbox-btn" onClick={showPrev}>
+                ⭠
+              </button>
+              <button className="lightbox-btn" onClick={showNext}>
+                ⭢
+              </button>
             </div>
           </div>
         </div>

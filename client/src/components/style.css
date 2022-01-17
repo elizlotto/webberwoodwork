@@ -24,3 +24,7 @@ p {
 h1 {
   font-weight: bold;
 }
+
+#bio {
+  padding-top: 7%;
+}
