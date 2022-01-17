@@ -1,51 +1,20 @@
-#navbar {
+.hero-head {
+  align-content: center;
   position: static;
-  background-color: #2d201c;
-  color: #42ac2b;
+  background-color: #fff1de;
+  color: #2b201d;
 }
 
+.header-bottom {
+  padding: 0.6rem;
+  width: 100%;
+  border-top: 6px solid #2b201d;
+  background-color: #41a960;
+}
 /* extends the color of the navbar for when the mobile version is displayed and burger clicked to expand. */
-
-#navbarMenuHeroA {
-  background-color: #2d201c;
-}
 
 img {
   margin-left: 20px;
   padding-bottom: 1%;
   padding-top: 1%;
-}
-
-/* .navbar-burger {
-  color: white;
-} */
-
-.navbar-burger:hover {
-  color: #ffd393;
-}
-
-/* handles the text color of the buttons in the nav */
-.btnclr {
-  color: #2d201c;
-}
-
-button {
-  font-family: "JetBrains Mono", monospace;
-  font-weight: bold;
-  font-size: 0.8em;
-  border-radius: 2px;
-
-  background-color: #fff1de;
-  text-decoration: none;
-  cursor: pointer;
-  height: 50px;
-  width: 80px;
-  border: solid #2d201c 4px;
-}
-
-button:hover {
-  border: solid #42ac2b;
-  background-color: #42ac2b;
-  border-radius: 2px;
-  text-align: center;
 }

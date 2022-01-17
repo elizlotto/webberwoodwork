@@ -9,7 +9,7 @@
   left: 0px;
   right: 0px;
   color: white;
-  background-color: #42ac2b;
+  background-color: #41a960;
 }
 
 h1 {
@@ -26,4 +26,37 @@ h4 {
 
 footer {
   padding-top: 1%;
+}
+
+#navbarMenuHeroA {
+  background-color: #41a960;
+}
+.navbar-burger:hover {
+  color: #ffd393;
+}
+
+#hero-head-bottom {
+  background-color: #41a960;
+}
+
+/* handles the text color of the buttons in the nav */
+
+button {
+  padding-right: 1%;
+  padding-left: 1%;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+.footer-top {
+  padding: 0.6rem;
+  width: 100%;
+  border-top: 6px solid #2b201d;
+  background-color: #41a960;
 }
