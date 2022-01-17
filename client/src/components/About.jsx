@@ -4,8 +4,7 @@ import './style.css';
 const About = () => {
   return (
     <div>
-      <div className="hero-image-about"></div>
-      <article className="body-div">
+      <article id="bio" className="body-div">
         My love for woodworking began when I was just 9 years old. My father suffered from a heart
         attack and although he recovered, he was unable to exert himself or climb a ladder to repair
         things around the house. He would tell me how to fix something and I would do it - I loved
