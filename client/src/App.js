@@ -16,6 +16,7 @@ const App = () => {
   return (
     <HashRouter>
       <main>
+        <FooterBar />
         <NavigationBar />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -23,7 +24,6 @@ const App = () => {
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/contact" component={Contact} />
         </Switch>
-        <FooterBar />
       </main>
     </HashRouter>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import ImageDisplayer from './ImageDisplayer';
 
-const Portfolio = (props) => {
+const Portfolio = () => {
   return (
     <div className="body-div">
       <div id="portfolio-text">
@@ -15,7 +15,7 @@ const Portfolio = (props) => {
         </p>
         <p>We know these houses; every day we do what others say can't be done anymore.</p>
       </div>
-      {<ImageDisplayer images={props.imagesArray} />}
+      {<ImageDisplayer />}
     </div>
   );
 };

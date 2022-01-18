@@ -24,6 +24,7 @@
     "now": "^21.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-grid-gallery": "^0.5.5",
     "react-router-dom": "^5.2.0",
     "webpack": "^5.47.1",
     "webpack-cli": "^3.3.2",
