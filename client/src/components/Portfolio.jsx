@@ -15,7 +15,7 @@ const Portfolio = () => {
         </p>
         <p>We know these houses; every day we do what others say can't be done anymore.</p>
       </div>
-      {<ImageDisplayer />}
+      <div id="gallery-div">{<ImageDisplayer />}</div>
     </div>
   );
 };

@@ -6,23 +6,19 @@ import './components/style.css'
 //import components for router
 import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
-import FooterBar from './components/FooterBar';
+import HeaderBar from './components/HeaderBar';
 import About from './components/About';
-import Contact from './components/Contact';
-import Testimonials from './components/Testimonials';
 
 const App = () => {
 
   return (
     <HashRouter>
       <main>
-        <FooterBar />
+        <HeaderBar />
         <NavigationBar />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/testimonials" component={Testimonials} />
-          <Route path="/contact" component={Contact} />
         </Switch>
       </main>
     </HashRouter>

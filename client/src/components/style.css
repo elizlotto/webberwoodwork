@@ -2,29 +2,30 @@
 .body-div {
   padding-left: 5%;
   padding-right: 5%;
-  /* padding-top: 145px; */
-  padding-bottom: 120px;
-  width: 100%;
   margin: auto;
+  padding-bottom: 2%;
   background-color: #fff1de;
+  position: absolute;
+  width: 100%;
 }
 
 /* css for the main html tag in app.js */
 main {
   color: #2d201c;
-  height: 100%;
 }
 #portfolio-text {
   text-align: left;
-  padding-bottom: 1%;
+  background-color: #fff1de;
 }
 p {
   padding-top: 1%;
 }
 h1 {
   font-weight: bold;
+  font-size: 3%;
 }
 
 #bio {
   padding-top: 7%;
+  padding-bottom: 7%;
 }
