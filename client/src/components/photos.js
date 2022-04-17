@@ -5,7 +5,6 @@ export const photos = [
     thumbnailWidth: 135,
     thumbnailHeight: 180,
     // caption: 'image 1',
-    // tags: [{ value: 'kitchens', title: 'kitchens'}]
   },
   {
     src: "./images/jwebber-woodworking-02.jpg",

@@ -12,14 +12,6 @@
   background-color: #41a960;
 }
 
-h1 {
-  font-size: 1.875em;
-}
-
-h2 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
 h4 {
   font-size: 1em;
 }
@@ -29,6 +21,11 @@ footer {
 }
 
 #navbarMenuHeroA {
+  background-color: #41a960;
+}
+
+.navbar-brand {
+  padding-left: 35%;
   background-color: #41a960;
 }
 .navbar-burger:hover {

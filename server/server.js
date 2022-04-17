@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const cors = require('cors');
-const router = require('./router');
 const path = require('path');
 
 // JSON parser, cors, body parser, statically serve the client side assets.
@@ -20,12 +19,6 @@ if (process.env.NODE_ENV === 'production') {
     res.status(200).sendFile(path.resolve(process.cwd(), './client/src/index.html'));
   });
 }
-
-//route for nodemailer
-app.post('/send', router.sendEmail, (req, res, next) => {
-  return res.status(200);
-  //could send back a message on res.locals here
-});
 
 // catch-all endpoint handler
 app.use((req, res) => {
